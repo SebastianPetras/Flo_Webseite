@@ -77,7 +77,7 @@ a:hover {
 }
 
 #mainNav .navbar-toggler {
-    font-size: 14px;
+    font-size: 12px;
     padding: 11px;
     color: white;
     border: 1px solid white;
@@ -101,6 +101,12 @@ a:hover {
 #mainNav .navbar-nav .nav-item:focus {
     outline: none;
     background-color: transparent;
+}
+
+@media (max-width: 800px) {
+    #mainNav .navbar-brand {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 992px) {
