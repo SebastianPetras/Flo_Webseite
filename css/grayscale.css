@@ -62,6 +62,11 @@ a:hover {
     color: #1d9b6c;
 }
 
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* ################################################################## */
 
 /* Navigation */
@@ -326,4 +331,13 @@ footer #ud_meta_nav ul a {
     footer #ud_meta_nav {
         margin: 0;
     }
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
