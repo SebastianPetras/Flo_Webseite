@@ -1,19 +1,11 @@
-/* CSS Document */
-
-/* ################################################################## */
-
-/* HTML Standard Tags */
-
-/* ################################################################## */
-
-html,
-body {
-    font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+body,
+html {
+    font-family: Lora, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     position: relative;
     width: 100%;
     height: 100%;
-    color: gainsboro;
-    background-color: #212529;
+    color: #dcdcdc;
+    background-color: #212529
 }
 
 h1,
@@ -22,126 +14,119 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 700;
     margin: 0 0 35px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 hr {
     max-width: 100px;
     border-width: 3px;
-    border-color: white;
+    border-color: #fff
 }
 
 p {
     font-size: 16px;
     line-height: 1.5;
-    margin: 0 0 25px;
+    margin: 0 0 25px
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
     p {
         font-size: 18px;
         line-height: 1.6;
-        margin: 0 0 35px;
+        margin: 0 0 35px
     }
 }
 
 a {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    color: black;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    color: #000
 }
 
 a:focus,
 a:hover {
     text-decoration: none;
-    color: #1d9b6c;
+    color: #1d9b6c
 }
 
-.btn:focus, .btn:active, button:focus, button:active {
-  outline: none !important;
-  box-shadow: none !important;
+.btn:active,
+.btn:focus,
+button:active,
+button:focus {
+    outline: 0 !important;
+    box-shadow: none !important
 }
-
-/* ################################################################## */
-
-/* Navigation */
-
-/* ################################################################## */
 
 #mainNav {
-    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin-bottom: 0;
     text-transform: uppercase;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    background-color: #000
 }
 
 #mainNav .navbar-toggler {
     font-size: 12px;
     padding: 11px;
-    color: white;
-    border: 1px solid white;
+    color: #fff;
+    border: 1px solid #fff
 }
 
 #mainNav .navbar-brand {
-    font-weight: 700;
+    font-weight: 700
 }
 
 #mainNav a {
-    color: white;
+    color: #fff
 }
 
 #mainNav .navbar-nav .nav-item {
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out
 }
 
 #mainNav .navbar-nav .nav-item:active,
 #mainNav .navbar-nav .nav-item:focus {
-    outline: none;
-    background-color: transparent;
+    outline: 0;
+    background-color: transparent
 }
 
-@media (max-width: 800px) {
+@media (max-width:800px) {
     #mainNav .navbar-brand {
-        font-size: 14px;
+        font-size: 14px
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width:992px) {
     #mainNav {
         padding-top: 20px;
         padding-bottom: 20px;
-        -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-        -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-        transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        -webkit-transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s;
+        -moz-transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s;
+        transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s;
         letter-spacing: 1px;
         border-bottom: none;
-        background: transparent;
+        background: 0 0
     }
+
     #mainNav.navbar-shrink {
         padding-top: 10px;
         padding-bottom: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        background: black;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        background: #000
     }
+
     #mainNav .nav-link.active {
-        outline: none;
-        background-color: rgba(255, 255, 255, 0.3);
+        outline: 0;
+        background-color: rgba(255, 255, 255, .3)
     }
 }
-
-/* ################################################################## */
-
-/* Header */
-
-/* ################################################################## */
 
 header {
     display: table;
@@ -149,38 +134,40 @@ header {
     height: auto;
     padding: 200px 0;
     text-align: center;
-    color: white;
-    background: url("../img/titel.jpeg") no-repeat bottom center scroll;
-    background-color: black;
+    color: #fff;
+    background: url(../img/titel.jpeg) no-repeat bottom center scroll;
+    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover
 }
 
 header .header-body {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 header .header-body h1 {
-    font-size: 50px;
+    font-size: 50px
 }
 
 header .header-body p {
-    font-size: 18px;
+    font-size: 18px
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
     header {
         height: 100%;
-        padding: 0;
+        padding: 0
     }
+
     header .header-body h1 {
-        font-size: 80px;
+        font-size: 80px
     }
+
     header .header-body p {
-        font-size: 22px;
+        font-size: 22px
     }
 }
 
@@ -190,54 +177,41 @@ header .header-body p {
     height: 55px;
     margin-top: 15px;
     line-height: 45px;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
-    color: white;
-    border: 2px solid white;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    color: #fff;
+    border: 2px solid #fff;
     border-radius: 100% !important;
-    background: transparent;
+    background: 0 0
 }
 
 .btn-circle:focus,
 .btn-circle:hover {
-    color: white;
-    outline: none;
-    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: 0;
+    background: rgba(255, 255, 255, .1)
 }
-
-
-/* ################################################################## */
-
-/* Umfassende Objekte & Klassen */
-
-/* ################################################################## */
 
 section {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 100px
 }
 
 .section-reverse {
     color: #212529;
-    background-color: gainsboro
+    background-color: #dcdcdc
 }
 
 .btn {
-    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     text-transform: uppercase;
-    border-radius: 0;
+    border-radius: 0
 }
-
-/* ################################################################## */
-
-/* Kontaktformular */
-
-/* ################################################################## */
 
 .form-group {
     border: 1px solid
@@ -250,7 +224,7 @@ section {
     text-align: center;
     padding: 15px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 15px
 }
 
 #errormessage {
@@ -260,51 +234,45 @@ section {
     text-align: center;
     padding: 15px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 15px
 }
 
 .form-group {
     border: 1px solid
 }
 
-/* ################################################################## */
-
-/* Footer */
-
-/* ################################################################## */
-
 footer {
     padding: 20px 0;
     font-size: 14px;
-    margin: 0;
+    margin: 0
 }
 
 footer p {
     font-size: 14px;
-    margin: 0;
+    margin: 0
 }
 
 footer .ud_logo {
-    width: 100%;
+    width: 100%
 }
 
 footer .ud_logo img {
     width: 130px;
-    height: auto;
+    height: auto
 }
 
 footer #ud_copyright {
     margin: -10px 0 0 0;
-    padding: 0;
+    padding: 0
 }
 
 footer #ud_meta_nav {
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 0
 }
 
 footer #ud_meta_nav ul {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 footer #ud_meta_nav ul li {
@@ -312,32 +280,33 @@ footer #ud_meta_nav ul li {
     padding: 0 2px 0 2px;
     list-style: none;
     display: inline;
-    border-right: 1px solid #666;
+    border-right: 1px solid #666
 }
 
 footer #ud_meta_nav ul li:last-child {
-    border: none;
+    border: none
 }
 
 footer #ud_meta_nav ul a {
-    color: gainsboro;
+    color: #dcdcdc
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width:800px) {
     footer {
         height: 110px;
-        padding: 20px 0 0 0;
+        padding: 20px 0 0 0
     }
+
     footer #ud_meta_nav {
-        margin: 0;
+        margin: 0
     }
 }
 
-#image-gallery .modal-footer{
-  display: block;
+#image-gallery .modal-footer {
+    display: block
 }
 
-.thumb{
-  margin-top: 15px;
-  margin-bottom: 15px;
+.thumb {
+    margin-top: 15px;
+    margin-bottom: 15px
 }
